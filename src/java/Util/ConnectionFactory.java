@@ -14,6 +14,13 @@ public class ConnectionFactory {
     private static final String SENHA = "123456";
 
     public static Connection getConnection() throws SQLException {
+
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new SQLException("Driver PostgreSQL não encontrado.", e);
+        }
+
         return DriverManager.getConnection(URL, USUARIO, SENHA);
     }
 }
