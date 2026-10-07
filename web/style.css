@@ -1,0 +1,392 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 6 de out. de 2026, 23:14:03
+    Author     : kauan
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    background: #111827;
+    border-bottom: 1px solid #334155;
+
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #3b82f6;
+}
+
+.nav-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #3b82f6;
+}
+
+/* =========================
+   HOME
+   ========================= */
+
+.hero {
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+    margin-bottom: 24px;
+
+    border: 1px solid #2563eb;
+    border-radius: 50px;
+
+    background: rgba(37, 99, 235, 0.12);
+    color: #60a5fa;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    color: #ffffff;
+
+    font-size: 54px;
+    line-height: 1.1;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #3b82f6;
+}
+
+.hero p {
+    max-width: 650px;
+
+    margin: 0 auto 32px;
+
+    color: #94a3b8;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* =========================
+   BOTÕES
+   ========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #334155;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #475569;
+}
+
+.btn-edit {
+    background: #f59e0b;
+    color: #111827;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background: #fbbf24;
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.btn-delete:hover {
+    background: #b91c1c;
+}
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 45px auto;
+}
+
+.page-header {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.page-header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 7px;
+}
+
+.page-header p {
+    color: #94a3b8;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card {
+    background: #1e293b;
+
+    border: 1px solid #334155;
+    border-radius: 14px;
+
+    padding: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.form-card {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+/* =========================
+   FORMULÁRIO
+   ========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: #0f172a;
+    color: #ffffff;
+
+    border: 1px solid #475569;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #64748b;
+}
+
+.form-group input:focus {
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+/* =========================
+   TABELA
+   ========================= */
+
+.table-card {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+thead {
+    background: #0f172a;
+}
+
+th {
+    color: #94a3b8;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+th,
+td {
+    padding: 16px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #334155;
+}
+
+td {
+    color: #cbd5e1;
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #263449;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.empty {
+    text-align: center;
+    color: #94a3b8;
+
+    padding: 40px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        text-align: center;
+    }
+}

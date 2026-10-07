@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HeroManager - Sistema de Super-Heróis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra superior -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            HERO<span>MANAGER</span>
+        </a>
+
+        <a href="SuperHeroiController?acao=listar" class="nav-link">
+            Gerenciar Heróis
+        </a>
+
+    </nav>
+
+
+    <!-- Conteúdo principal -->
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                Sistema de Gerenciamento
+            </span>
+
+            <h1>
+                Gerencie seus
+                <span>Super-Heróis</span>
+            </h1>
+
+            <p>
+                Uma plataforma simples para cadastrar, consultar,
+                editar e excluir super-heróis de diferentes universos.
+            </p>
+
+            <a href="SuperHeroiController?acao=listar"
+               class="btn btn-primary">
+                Acessar Sistema
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
 </html>

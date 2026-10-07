@@ -12,6 +12,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Lista de Super-Heróis</title>
+         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Lista de Super-Heróis</h1>
